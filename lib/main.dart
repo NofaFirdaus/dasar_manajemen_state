@@ -8,7 +8,15 @@ class MasterPlanApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primarySwatch: Colors.purple),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        floatingActionButtonTheme:
+            FloatingActionButtonThemeData(backgroundColor: Colors.blue),
+        primarySwatch: Colors.blue,
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.blue,
+        ),
+      ),
       home: PlanScreen(),
     );
   }
