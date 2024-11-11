@@ -1,7 +1,6 @@
-import 'package:todo/plan_provider.dart';
-
 import '../models/data_layer.dart';
 import 'package:flutter/material.dart';
+import 'package:todo/plan_provider.dart';
 
 class PlanScreen extends StatefulWidget {
   const PlanScreen({super.key});
