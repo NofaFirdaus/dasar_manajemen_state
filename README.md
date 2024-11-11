@@ -15,7 +15,7 @@ Variabel plan di langkah ini dibuat sebagai konstanta karena nilai-nilainya dian
 
 # **Pratikum 2**
 # HASIL
-![alt text](image.png)
+![alt text](image1.png)
 
 # Penjelasan InheritedWidget pada Langkah 1 dan Alasan Penggunaan InheritedNotifier
 - **InheritedWidget  adalah PlanProvider**, yaitu kelas yang diturunkan dari InheritedNotifier. InheritedWidget dalam Flutter digunakan untuk berbagi data antar widget di dalam hirarki widget tanpa harus mengirimkan data secara manual ke setiap widget.
