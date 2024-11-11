@@ -20,4 +20,5 @@ Variabel plan di langkah ini dibuat sebagai konstanta karena nilai-nilainya dian
 # Penjelasan InheritedWidget pada Langkah 1 dan Alasan Penggunaan InheritedNotifier
 - **InheritedWidget  adalah PlanProvider**, yaitu kelas yang diturunkan dari InheritedNotifier. InheritedWidget dalam Flutter digunakan untuk berbagi data antar widget di dalam hirarki widget tanpa harus mengirimkan data secara manual ke setiap widget.
 
+
 - **Pada PlanProvider, yang digunakan adalah InheritedNotifier dan bukan InheritedWidget biasa**, karena InheritedNotifier memiliki kemampuan untuk memperbarui widget yang bergantung padanya saat data berubah. InheritedNotifier ini berguna dalam kasus di mana kita memiliki data yang mungkin berubah, seperti pada aplikasi ini yang memiliki daftar tugas (tasks) yang statusnya (lengkap atau belum lengkap) dapat berubah. ValueNotifier digunakan sebagai notifier untuk mengemas data Plan agar dapat diubah secara real-time, sehingga setiap perubahan dalam Plan langsung diperbarui di semua widget yang menggunakan PlanProvider.
